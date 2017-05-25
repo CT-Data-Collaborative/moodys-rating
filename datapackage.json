@@ -1,0 +1,214 @@
+{
+  "name": "moodys-ratings",
+  "datapackage_version": "1.0-beta.18",
+  "title": "Moodys Ratings",
+  "description": "Moody's Ratings reports the rating of creditworthiness provided by Moody's Corporation.",
+  "version": "1.0",
+  "licenses": [{
+    "url": "http://opendatacommons.org/licenses/pddl/",
+    "name": "Open Data Commons Public Domain",
+    "version": "1.0",
+    "id": "odc-pddl"
+  }],
+  "sources": [{
+    "name": "ctopm",
+    "web": ""
+  }],
+  "author":[{
+    "name": "Jenna Daly",
+    "email": "jdaly@ctdata.org",
+    "web": "http://ctdata.org"
+  }],
+  "contributor": [],
+  "resources": [{
+    "path": "data/moodys_ratings_2015.csv",
+    "format": "csv",
+    "schema": {
+      "fields": [{
+          "name": "Town",
+          "type": "string",
+          "dimension": false
+        }, {
+          "name": "FIPS",
+          "type": "string",
+          "dimension": false
+        }, {
+          "name": "Year",
+          "type": "string",
+          "dimension": false
+        }, {
+          "name": "Measure Type",
+          "type": "string",
+          "dimension": true, 
+          "constraints": {
+			      "enum": ["Moody's Rating"]
+			    }
+        }, {
+          "name": "Variable",
+          "type": "string",
+          "dimension": true, 
+          "constraints": {
+            "enum": ["Moody's Rating"]
+          }           
+        }, {
+          "name": "Value",
+          "type": "string",
+          "dimension": false
+        }]
+      }
+    }
+  ],
+  "last_modified": "05/25/2017",
+  "ckan_extras": {
+    "full_description": {
+      "ckan_name": "Full Description",
+      "value": "The purpose of Moody's ratings is to provide a simple system of gradation by which future relative creditworthiness of securities may be gauged. Moody's rating scale ranks credit in the following categorical order, from highest to lowest - Aaa, Aa, A, Baa, Ba, B, Caa, Ca, C - and may append a numerical 1, 2, or 3 to designate that the rating falls in the higher end (1) or lower end (3) of the alphabetical category.",
+      "type": "string"
+    },
+    "suppression": {
+      "ckan_name": "Suppression",
+      "value": "",
+      "type": "string"
+    },
+    "technical_notes": {
+      "ckan_name": "Technical Notes",
+      "value": "",
+      "type": "string"
+    },
+    "socrata": {
+      "ckan_name": "Socrata",
+      "value": "False",
+      "type": "string"
+    },
+    "socrata_url": {
+      "ckan_name": "Socrata Dataset URL",
+      "value": "",
+      "type": "string"
+    },
+    "domain": {
+      "ckan_name": "Domain",
+      "value": "",
+      "type": "string"
+    },
+    "subdomain": {
+      "ckan_name": "Subdomain",
+      "value": "",
+      "type": "string"
+    },
+    "geography": {
+      "ckan_name": "Geography",
+      "value": "Town",
+      "type": "string",
+      "constraints": {"enum": ["Town", "County", "Town/County", "District", "Other"]}
+    },
+    "frequency": {
+      "ckan_name": "Frequency",
+      "value": "Annual",
+      "type": "string"
+    },
+    "years_in_catalog": {
+      "ckan_name": "Years in Catalog",
+      "value": ["SFY 2000-2001", "SFY 2001-2002", "SFY 2002-2003", "SFY 2003-2004", "SFY 2004-2005", "SFY 2005-2006", "SFY 2006-2007", "SFY 2007-2008", "SFY 2008-2009", "SFY 2009-2010", "SFY 2010-2011", "SFY 2011-2012", "SFY 2012-2013", "SFY 2013-2014", "SFY 2014-2015"],
+      "type": "array"
+    },
+    "latest_year": {
+      "ckan_name": "Latest Year Available",
+      "value": "SFY 2014-2015",
+      "type": "string"
+    },
+    "disabled_views": {
+      "ckan_name": "Disabled Views",
+      "value": [],
+      "type": "array",
+      "constraints": {"enum": ["map", "table", "bar", "line"]}
+    },
+    "units": {
+      "ckan_name": "Units",
+      "value": {
+        "Number": "",
+        "Percent": "%"
+      }
+    },
+    "expected_number_of_geographies": {
+      "ckan_name": "Expected Number of Unique Geographies",
+      "value": 169,
+      "type": "string"
+    },   
+    "default": {}
+  }, 
+  "spot_checks": [
+    {
+      "type": "$lookup",
+      "filter": {
+        "Town": "New Canaan",
+        "Year": "SFY 2000-2001",
+        "Variable": "Moody's Rating",
+        "Measure Type": "Moody's Rating"
+      },
+      "expected": {
+        "type": "$match",
+        "number type": "string",
+        "value": ["Aaa"]
+      }
+    },
+    {
+      "type": "$lookup",
+      "filter": {
+        "Town": "Waterbury",
+        "Year": "SFY 2003-2004",
+        "Variable": "Moody's Rating",
+        "Measure Type": "Moody's Rating"
+      },
+      "expected": {
+        "type": "$match",
+        "number type": "int",
+        "value": ["Baa2"]
+      }
+    },    
+     {
+      "type": "$lookup",
+      "filter": {
+        "Town": "Durham",
+        "Year": "SFY 2007-2008",
+        "Variable": "Moody's Rating",
+        "Measure Type": "Moody's Rating"
+      },
+      "expected": {
+        "type": "$match",
+        "number type": "int",
+        "value": [""]
+      }
+    },
+    {
+      "type": "$lookup",
+      "filter": {
+        "Town": "Hartford",
+        "Year": "SFY 2013-2014",
+        "Variable": "Moody's Rating",
+        "Measure Type": "Moody's Rating"
+      },
+      "expected": {
+        "type": "$match",
+        "number type": "int",
+        "value": ["A2"]
+      }
+    },
+    {
+      "type": "$lookup",
+      "filter": {
+        "Town": "West Haven",
+        "Year": "SFY 2014-2015",
+        "Variable": "Moody's Rating",
+        "Measure Type": "Moody's Rating"
+      },
+      "expected": {
+        "type": "$match",
+        "number type": "int",
+        "value": ["Baa2"]
+      }
+    }    
+  ],
+  "dimension_groups": [    
+    {"Measure Type": ["Moody's Rating"]}  
+  ]
+}
