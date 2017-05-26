@@ -58,7 +58,7 @@
       }
     }
   ],
-  "last_modified": "05/25/2017",
+  "last_modified": "05/26/2017",
   "ckan_extras": {
     "full_description": {
       "ckan_name": "Full Description",
@@ -148,7 +148,7 @@
       "expected": {
         "type": "$match",
         "number type": "string",
-        "value": ["Aaa"]
+        "value": "Aaa"
       }
     },
     {
@@ -161,8 +161,8 @@
       },
       "expected": {
         "type": "$match",
-        "number type": "int",
-        "value": ["Baa2"]
+        "number type": "string",
+        "value": "Baa2"
       }
     },    
      {
@@ -175,8 +175,8 @@
       },
       "expected": {
         "type": "$match",
-        "number type": "int",
-        "value": [""]
+        "number type": "string",
+        "value": ""
       }
     },
     {
@@ -189,8 +189,8 @@
       },
       "expected": {
         "type": "$match",
-        "number type": "int",
-        "value": ["A2"]
+        "number type": "string",
+        "value": "A2"
       }
     },
     {
@@ -203,8 +203,8 @@
       },
       "expected": {
         "type": "$match",
-        "number type": "int",
-        "value": ["Baa2"]
+        "number type": "string",
+        "value": "Baa2"
       }
     }    
   ],
