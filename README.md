@@ -1,6 +1,6 @@
 Moodys Ratings
 
-[![Build Status](https://travis-ci.org/CT-Data-Collaborative/moodys-ratings.svg?branch=master)](https://travis-ci.org/CT-Data-Collaborative/moodys-ratings)
+[![Build Status](https://travis-ci.org/CT-Data-Collaborative/moodys-rating.svg?branch=master)](https://travis-ci.org/CT-Data-Collaborative/moodys-rating)
 
 Moody's Ratings reports the rating of creditworthiness provided by Moody's Corporation.
 
