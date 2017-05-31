@@ -134,7 +134,16 @@
       "value": 169,
       "type": "string"
     },   
-    "default": {}
+    "default": {      
+      "ckan_name": "Default",
+      "value": {
+        "Town": "Hartford",
+        "Measure Type": "Moody's Rating",
+        "Year": ["SFY 2014-2015"],
+        "Variable": ["Moody's Rating"]
+      },
+      "type": "object"
+    }
   }, 
   "spot_checks": [
     {
