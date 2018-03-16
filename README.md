@@ -1,10 +1,8 @@
 Moodys Ratings
 
-[![Build Status](https://travis-ci.org/CT-Data-Collaborative/moodys-rating.svg?branch=master)](https://travis-ci.org/CT-Data-Collaborative/moodys-rating)
-
 Moody's Ratings reports the rating of creditworthiness provided by Moody's Corporation.
 
-Data Source: <https://data.ct.gov/Government/Municipal-Fiscal-Indicators-2011-2015-MS-Access-da/uij9-wzqw>
+Data Source: <https://data.ct.gov/Government/Municipal-Fiscal-Indicators-2012-2016-MS-Access-Da/x5e2-4aw5>
 
 ## License MIT
 
