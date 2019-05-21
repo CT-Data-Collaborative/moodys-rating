@@ -15,13 +15,13 @@
     "web": ""
   }],
   "author":[{
-    "name": "Connecticut Data Collaborative",
-    "email": "info@ctdata.org",
+    "name": "Jenna Daly",
+    "email": "jdaly@ctdata.org",
     "web": "http://ctdata.org"
   }],
   "contributor": [],
   "resources": [{
-    "path": "data/moodys_ratings_2017.csv",
+    "path": "data/moodys_ratings_2016.csv",
     "format": "csv",
     "schema": {
       "fields": [{
@@ -58,7 +58,7 @@
       }
     }
   ],
-  "last_modified": "05/21/2019",
+  "last_modified": "03/16/2018",
   "ckan_extras": {
     "full_description": {
       "ckan_name": "Full Description",
@@ -82,12 +82,12 @@
     },
     "socrata_url": {
       "ckan_name": "Socrata Dataset URL",
-      "value": "https://data.ct.gov/dataset/Municipal-Fiscal-Indicators-2013-2017/sxe5-hth8",
+      "value": "https://data.ct.gov/Government/Municipal-Fiscal-Indicators-2012-2016-MS-Access-Da/x5e2-4aw5",
       "type": "string"
     },
     "socrata_dataset_name": {
       "ckan_name": "Socrata Dataset Name",
-      "value": "Municipal Fiscal Indicators 2013-2017",
+      "value": "Municipal Fiscal Indicators (2012-2016) MS Access Database",
       "type": "string"
     }, 
     "domain": {
@@ -113,12 +113,12 @@
     },
     "years_in_catalog": {
       "ckan_name": "Years in Catalog",
-      "value": ["SFY 2000-2001", "SFY 2001-2002", "SFY 2002-2003", "SFY 2003-2004", "SFY 2004-2005", "SFY 2005-2006", "SFY 2006-2007", "SFY 2007-2008", "SFY 2008-2009", "SFY 2009-2010", "SFY 2010-2011", "SFY 2011-2012", "SFY 2012-2013", "SFY 2013-2014", "SFY 2014-2015", "SFY 2015-2016", "SFY 2016-2017"],
+      "value": ["SFY 2000-2001", "SFY 2001-2002", "SFY 2002-2003", "SFY 2003-2004", "SFY 2004-2005", "SFY 2005-2006", "SFY 2006-2007", "SFY 2007-2008", "SFY 2008-2009", "SFY 2009-2010", "SFY 2010-2011", "SFY 2011-2012", "SFY 2012-2013", "SFY 2013-2014", "SFY 2014-2015", "SFY 2015-2016"],
       "type": "array"
     },
     "latest_year": {
       "ckan_name": "Latest Year Available",
-      "value": "SFY 2016-2017",
+      "value": "SFY 2015-2016",
       "type": "string"
     },
     "disabled_views": {
@@ -144,7 +144,7 @@
       "value": {
         "Town": "Hartford",
         "Measure Type": "Moody's Rating",
-        "Year": ["SFY 2016-2017"],
+        "Year": ["SFY 2015-2016"],
         "Variable": ["Moody's Rating"]
       },
       "type": "object"
