@@ -82,12 +82,12 @@
     },
     "socrata_url": {
       "ckan_name": "Socrata Dataset URL",
-      "value": "https://data.ct.gov/dataset/Municipal-Fiscal-Indicators-2013-2017/sxe5-hth8",
+      "value": "",
       "type": "string"
     },
     "socrata_dataset_name": {
       "ckan_name": "Socrata Dataset Name",
-      "value": "Municipal Fiscal Indicators 2014-2018",
+      "value": "",
       "type": "string"
     }, 
     "domain": {
