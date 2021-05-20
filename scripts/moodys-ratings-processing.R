@@ -74,7 +74,7 @@ moodys_data <- moodys_data %>%
 # Write to File
 write.table(
   moodys_data,
-  file.path(getwd(), "data", "moodys_ratings_2016.csv"),
+  file.path(getwd(), "data", "moodys_ratings_2018.csv"),
   sep = ",",
   row.names = F
 )
